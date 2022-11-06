@@ -1,13 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import { StyleSheet, Text, TouchableHighlight, View } from 'react-native';
+import React, { useState } from 'react';
+import { Text, View } from 'react-native';
 import { base, colors } from '../utils/base';
-import auth from '@react-native-firebase/auth';
-import { pairScooter } from '../api/Api';
-import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
-import Geolocation from 'react-native-geolocation-service';
-import { hasLocationPermission } from '../utils/helpers';
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import Icon2 from 'react-native-vector-icons/FontAwesome5';
 
 interface IProps {}
 

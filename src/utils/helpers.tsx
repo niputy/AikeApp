@@ -21,11 +21,6 @@ export const DismissKeyboard = ({ children }: any) => (
 );
 
 export const hasLocationPermission = async () => {
-  // if (Platform.OS === 'ios') {
-  //   const hasPermission = await hasPermissionIOS();
-  //   return hasPermission;
-  // }
-
   if (Platform.OS === 'android' && Platform.Version < 23) {
     return true;
   }
